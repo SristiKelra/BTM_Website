@@ -1,13 +1,16 @@
 
 import './App.css'
 import CaseStudy from './CaseStudy';
+import Service from './Service';
 
 function App() {
   
 
   return (
-    
-    <CaseStudy />
+    <div>
+      <Service />
+      <CaseStudy />
+    </div>
   );
 }
 export default App
