@@ -1,16 +1,17 @@
 /* Wrapper to hold both the info card and map */
 .info-wrapper {
-  width: 100%;             /* Allow it to shrink on mobile */
-  max-width: 1200px;       /* Much wider, matching the photo */
-  margin-top: 40px;        /* Add space above it */
-  padding: 0 20px;         /* Keep some padding on the sides */
-  box-sizing: border-box;  /* Ensures padding doesn't break the layout */
-  
-  /* REMOVED: margin: 0 auto; (This stops it from forcing itself to the center) */
+  width: 100%;            
+  max-width: none;        
+  padding:  0;         
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 
 .info-card {
+  width: 100%;
+  box-sizing: border-box;
   background-color: #000000; 
   color: #ffffff;
   padding: 40px;
@@ -57,6 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .map-text {

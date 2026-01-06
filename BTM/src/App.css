@@ -1,19 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-body{
-  background-color: #FAFAFA;
-}
-.contact-container {
-  /* A very soft grey/white - standard in modern UI */
-  background-color: #FAFAFA; 
+/* Ensure the body allows left alignment */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb; /* Light background for the whole page */
 }
 
-/* 2. Input Fields (The Boxes) */
-.form-input {
-  /* Pure white to pop against the background */
-  background-color: #FFFFFF; 
+.page-container {
+  width: 100%;
+  padding: 80px 40px;      
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;  
+  gap: 60px;
+  
+  width: 100%;            
+  max-width: 100%;      
+  align-items: stretch;         
+}
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
 }
