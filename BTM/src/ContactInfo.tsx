@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactInfo.css';
+import MapComponent from './MapComponent'; // <--- Import the new map component
 
 const ContactInfo: React.FC = () => {
   return (
@@ -30,10 +31,9 @@ const ContactInfo: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Map Placeholder (We will add Leaflet here later) */}
-      <div id="map-container" className="map-placeholder">
-        <span className="map-text">Map Location</span>
-      </div>
+      {/* 2. The Real Map Component (Replaces the old grey placeholder) */}
+      <MapComponent />
+      
     </div>
   );
 };
