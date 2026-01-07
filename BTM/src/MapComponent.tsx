@@ -36,6 +36,10 @@ const MapComponent: React.FC = () => {
 
     
       mapInstanceRef.current = map;
+      // --- THE FIX: Force a resize check ---
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 100);
     }
 
     
