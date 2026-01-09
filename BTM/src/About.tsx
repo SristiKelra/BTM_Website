@@ -46,28 +46,28 @@ const About: React.FC = () => {
 
       {/* Clients Section */}
       <div className="clients-section">
-        <h3 className="clients-title">Some of our <span className="blue-text">clients</span></h3>
-        
-        <div className="clients-grid">
-          <div className="client-item iag">
-            <strong>IAG</strong><span className="blue-text">Cargo</span>
-          </div>
-          
-          <div className="client-item fleming">
-            <div className="blue-circle-icon">💡</div>
-            <p>The Fleming Fund</p>
-          </div>
+  <h3 className="clients-title">Some of our <span className="blue-text">clients</span></h3>
+  
+  <div className="clients-grid">
+    <div className="client-item iag">
+      <strong>IAG</strong><span className="blue-text">Cargo</span>
+    </div>
+    
+    <div className="client-item fleming">
+      <div className="blue-circle-icon">💡</div>
+      <p>The Fleming Fund</p>
+    </div>
 
-          <div className="client-item hecc">
-            <strong>Hecc</strong> <span className="orange-text">Analytics</span>
-          </div>
+    <div className="client-item hecc">
+      <strong>Hecc</strong> <span className="orange-text">Analytics</span>
+    </div>
 
-          <div className="client-item atheism">
-             <div className="blue-solid-circle"></div>
-             <p>EXPLAINING ATHEISM</p>
-          </div>
-        </div>
-      </div>
+    <div className="client-item atheism">
+       <div className="blue-solid-circle"></div>
+       <p>EXPLAINING ATHEISM</p>
+    </div>
+  </div>
+</div>
     </section>
   );
 };

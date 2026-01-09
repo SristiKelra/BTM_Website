@@ -1,4 +1,4 @@
-
+/* index.css / App.css */
 :root {
   width: 100%;
 }
@@ -8,17 +8,19 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  
+  /* Disable centering layouts that cause black side bars */
   display: block !important; 
   background-color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #root {
   width: 100%;
   margin: 0;
   padding: 0;
-  max-width: none !important; 
+  max-width: none !important; /* Forces the app to ignore 1280px limits */
 }
+
 * {
   box-sizing: border-box;
 }

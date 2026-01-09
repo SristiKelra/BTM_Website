@@ -1,22 +1,36 @@
-.logo-divider {
-  width: 100%;
-  background-color: #ffffff; /* Matches your main page background */
-  padding: 60px 0; /* Creates space above and below the divider */
+/* Logo.css */
+
+.logo-stretch-container {
+  /* Forces the element to be the exact width of the browser window */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  
+  /* Remove all margins and set background to white */
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  
   display: flex;
   justify-content: center;
-}
-
-.logo-container {
-  width: 100%;
-  max-width: 100vw;
-  /* Adds the clean black lines at the top and bottom of the divider strip */
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
   overflow: hidden;
 }
 
-.logo-svg {
+.logo-white-box {
   width: 100%;
+  background-color: #ffffff;
+  /* Optional: Keep these if you want the horizontal black box lines, 
+     otherwise delete them to make it perfectly white */
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.logo-svg {
+  width: 100%; /* Stretches the SVG to the window edges */
   height: auto;
   display: block;
+  background-color: #ffffff;
 }

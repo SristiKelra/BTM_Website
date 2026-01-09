@@ -1,3 +1,23 @@
+.about-section-stretched {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #ffffff;
+  padding: 100px 10%;
+  box-sizing: border-box;
+}
+
+
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #4b5563;
+  max-width: 1100px; 
+  margin-bottom: 24px;
+}
 .about-section {
   background-color: #ffffff;
   padding: 80px 10%;
@@ -106,4 +126,27 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 8px;
+}
+/* --- RESPONSIVE BREAKPOINT --- */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 5%;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .stats-container {
+    flex-direction: column; /* Stack 11, 57, 7 vertically */
+    gap: 40px;
+    align-items: center;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr; /* Stack client logos in 1 column */
+    gap: 50px;
+    justify-items: center;
+  }
 }

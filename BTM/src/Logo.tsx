@@ -3,32 +3,28 @@ import './Logo.css';
 
 const Logo: React.FC = () => {
   return (
-    <div className="logo-divider">
-      <div className="logo-container">
-       
+    <section className="logo-stretch-container">
+      <div className="logo-white-box">
         <svg 
-          viewBox="0 0 800 400" 
+          viewBox="0 0 1000 400" 
           xmlns="http://www.w3.org/2000/svg"
           className="logo-svg"
+          preserveAspectRatio="xMidYMid slice"
         >
-          
-          <rect width="800" height="400" fill="#f0f2f5" />
+          {/* Pure White Background inside the SVG */}
+          <rect width="1000" height="400" fill="#ffffff" />
 
+          {/* Concentric Circles centered */}
+          <circle cx="500" cy="200" r="160" fill="none" stroke="black" strokeWidth="6" />
+          <circle cx="500" cy="200" r="120" fill="none" stroke="black" strokeWidth="6" />
+          <circle cx="500" cy="200" r="80" fill="none" stroke="black" strokeWidth="6" />
           
-          <line x1="0" y1="0" x2="0" y2="400" stroke="black" strokeWidth="10" />
-          <line x1="800" y1="0" x2="800" y2="400" stroke="black" strokeWidth="10" />
-
-          
-          <circle cx="400" cy="200" r="160" fill="none" stroke="black" strokeWidth="6" />
-          <circle cx="400" cy="200" r="120" fill="none" stroke="black" strokeWidth="6" />
-          <circle cx="400" cy="200" r="80" fill="none" stroke="black" strokeWidth="6" />
-          
-          
-          <path d="M 400 200 Q 460 140, 520 200 L 400 200" fill="black" />
-          <circle cx="400" cy="200" r="35" fill="black" />
+          {/* The Pointer Graphic */}
+          <path d="M 500 200 Q 550 150, 620 200 L 500 200" fill="black" />
+          <circle cx="500" cy="200" r="35" fill="black" />
         </svg>
       </div>
-    </div>
+    </section>
   );
 };
 

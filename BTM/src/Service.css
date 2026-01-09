@@ -75,3 +75,16 @@
   line-height: 1.6;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .service-container {
+    padding: 40px 5%; /* Less padding on small screens */
+  }
+
+  .service-main-title {
+    font-size: 28px; /* Shrink title size */
+  }
+
+  .service-card {
+    padding: 20px; /* Compact padding for mobile */
+  }
+}
