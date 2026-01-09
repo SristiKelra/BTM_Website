@@ -32,7 +32,7 @@ const imageVariants = {
   hidden: { opacity: 0, scale: 0.3, zIndex: 0 }
 }
 
-export const ImageSlider: React.FC = () => {
+export const Talent_Image: React.FC = () => {
   const [centerIndex, setCenterIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
 
@@ -69,7 +69,7 @@ export const ImageSlider: React.FC = () => {
     <section className="snap-start min-h-screen px-4 py-10 bg-gradient-to-b from-[#0A0A0C] via-[#0B0B0D] to-[#0A0A0C]">
       <div className="mx-auto max-w-6xl space-y-4">
         <h3 className="text-3xl font-bold text-sky-400 text-center">
-          Our People
+          Our Talents
         </h3>
 
         <div className="relative flex items-center justify-center h-[70vh] overflow-hidden perspective-[1200px]">
