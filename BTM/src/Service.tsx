@@ -4,7 +4,7 @@ import './Service.css';
 const Service: React.FC = () => {
   const serviceData = [
     {
-      icon: "💻", 
+      icon: "💻", // For the exact look, use an icon library like lucide-react
       title: "Web App Development",
       description: "Full-stack web applications built with modern frameworks and best practices."
     },
@@ -17,6 +17,11 @@ const Service: React.FC = () => {
       icon: "📱",
       title: "Mobile Applications",
       description: "Native and cross-platform mobile solutions for iOS and Android."
+    },
+    {
+      icon: "🧠",
+      title: "Applied R&D",
+      description: "AI, ML, and LLM applications for innovative business solutions."
     }
   ];
 
@@ -26,13 +31,13 @@ const Service: React.FC = () => {
         We are <span className="blue-highlight">experts</span> in
       </h2>
 
-      <div className="service-grid">
+      <div className="service-list">
         {serviceData.map((item, index) => (
-          <div key={index} className="service-item">
+          <div key={index} className="service-card">
             <div className="service-icon-box">{item.icon}</div>
             <div className="service-content">
-              <h3 className="service-item-title">{item.title}</h3>
-              <p className="service-item-desc">{item.description}</p>
+              <h3 className="service-card-title">{item.title}</h3>
+              <p className="service-card-desc">{item.description}</p>
             </div>
           </div>
         ))}

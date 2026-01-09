@@ -1,0 +1,22 @@
+.logo-divider {
+  width: 100%;
+  background-color: #ffffff; /* Matches your main page background */
+  padding: 60px 0; /* Creates space above and below the divider */
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container {
+  width: 100%;
+  max-width: 100vw;
+  /* Adds the clean black lines at the top and bottom of the divider strip */
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  overflow: hidden;
+}
+
+.logo-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
