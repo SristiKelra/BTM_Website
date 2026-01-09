@@ -17,6 +17,7 @@ import { ForOrganisationsWhoWeWorkWith } from "./sections/ForOrganisationsWhoWeW
 import { ForOrganisationsHowToEngage } from "./sections/ForOrganisationsHowToEngage";
 import { ForOrganisationsWhatYouGet } from "./sections/ForOrganisationsWhatYouGet";
 import { BackToTopButton } from "./BackToTopButton";
+import ImageSlider from "./sections/ImageSlider";
 // import { Contact } from "./sections/Contact";
 
 const App: React.FC = () => {
@@ -55,6 +56,11 @@ const App: React.FC = () => {
         <OurPeople />
       </section>
       */ }
+
+       <section id="our-people">
+        <ImageSlider />
+      </section>
+     
       <section id="about-us">
         <AboutUs />
         <AboutUsImpactSection />
@@ -69,6 +75,8 @@ const App: React.FC = () => {
         <ForOrganisationsHowToEngage />
         <ForOrganisationsWhatYouGet />
       </section>
+
+      
       { /*
       <section id="contact">
         <Contact />

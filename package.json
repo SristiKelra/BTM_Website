@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^2.11.0",
     "@tailwindcss/vite": "^4.1.18",
     "bootstrap": "^5.3.8",
+    "framer-motion": "^12.23.26",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-redux": "^9.2.0"
