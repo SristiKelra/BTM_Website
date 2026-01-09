@@ -1,14 +1,21 @@
 import Service from './Service';
-import CaseStudy from './CaseStudy';
 import Logo from './Logo';
+import About from './About';
+import CaseStudy from './CaseStudy';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#000000' }}>
-      {/* Service section comes first */}
+    <div className="App">
+      {/* 1. Experts Cards */}
       <Service />
+      
+      {/* 2. Full-width Logo Divider */}
       <Logo />
-      {/* Case Study section follows immediately below */}
+      
+      {/* 3. Mission, Stats, and Clients */}
+      <About />
+      
+      {/* 4. Detailed Project Highlight */}
       <CaseStudy />
     </div>
   );
