@@ -1,26 +1,34 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { Linkedin } from 'lucide-react'
 
-import AnanyaBadithe from '../assets/images/AnanyaBadithe.png'
-import ElainaTesfai from '../assets/images/ElainaTesfai.png'
-import JohannCardona from '../assets/images/JohannCardona.jpg'
-import MarwanHajMohamed from '../assets/images/MarwanHajMohamed.png'
-import Nitya_Powar from '../assets/images/Nitya_Powar.png'
-import RobertShuttleworth from '../assets/images/RobertShuttleworth.png'
-import SamuelAsareBotwe from '../assets/images/SamuelAsareBotwe.png'
-import SuryaanshMaithani from '../assets/images/SuryaanshMaithani.jpg'
-import ThoyburRahman from '../assets/images/ThoyburRahman.png'
+
+import AlanSerranoRico from '../assets/Expert images/Alan_Serrano_Rico.png'
+import Xiaohui_Liu from '../assets/Expert images/Xiaohui_Liu.png'
+import Kate_Hone from '../assets/Expert images/Kate_Hone.png'
+import Timothy_Cribbini from '../assets/Expert images/Timothy_Cribbini.png'
+import Giuseppe_Destefanis from '../assets/Expert images/Giuseppe_Destefanis.png'
+import David_Bell from '../assets/Expert images/David_Bell.png'
+import Derek_Groen from '../assets/Expert images/Derek_Groen.png'
+import Isabel_Sasoon from '../assets/Expert images/Isabel_Sasoon.png'
+import Stephen_Swift from '../assets/Expert images/Stephen_Swift.png'
+import Alina_Miron from '../assets/Expert images/Alina_Miron.png'
+import Rumyana_Neykova from '../assets/Expert images/Rumyana_Neykova.png'  
+import MahirArzoky from '../assets/Expert images/Mahir_Arzoky.png'
 
 const images = [
-  { src: AnanyaBadithe, name: 'Ananya Badithe', role: 'Frontend Developer', description: 'I am an enthusiatic and hardworking data science professional equipped with a business and analytical skillset who has extensive working knowledge of data analysis projects in Python and R.' },
-  { src: ElainaTesfai, name: 'Elaina Tesfai', role: 'Executive Team/Front-end Developer', description: 'I am a dependable,quick-thinking and responsible individual that thoroughly enjoys challenging myself and pushing the boundaries of what I can achieve.' },
-  { src: JohannCardona, name: 'Johann Cardona', role: 'Full-Stack Developer', description: 'I am curious individual mastering code,balancing theory and practice,embracing challenges to shape a boundless future in software development and AI.' },
-  { src: MarwanHajMohamed, name: 'Marwan Haj Mohamed', role: 'Executive Team/Front-end Developer' ,description:'I am passionate, quick learning programmer that constantly broaden my knowledge in different languages to earn more experience in this field. '},
-  { src: Nitya_Powar, name: 'Nitya Powar', role: 'Front-end Developer',description:'I am dedicated passionate and a acute learner, consistently expanding my expertise across multiple programming languages and in the field of Computer Science.'},
-  { src: RobertShuttleworth, name: 'Robert Shuttleworth', role: 'Programmer' ,description:'An articulate and motivational individual with experience working with multiple programming languages.I am keen to develop my existing skills and learn new skills to complement them.'},
-  { src: SamuelAsareBotwe, name: 'Samuel Asare Botwe', role: 'Data Analyst',description:'I am a very motivated data analyst and computer programmer that is willing to learn and use their skills to provide problem-solving strategies and applications.' },
-  { src: SuryaanshMaithani, name: 'Suryaansh Maithani', role: 'Full-Stack Developer',description:'I am a self-motivated and dedicated university student with an unwavering passion for software programming. I am fully immeresed in the world of full stack development and I thrive in collaborative evironments,valuing teamwork and delivering high-quality, user-centric solutions. ' },
-  { src: ThoyburRahman, name: 'Thoybur Rahman', role: 'Full-Stack Developer',description:'I am strong-willed and strive to make my initial plans and prototypes a success regardless of the obstacles that stand in the way. This will facilitate me in becoming successful in this career.' }
+  { src: Rumyana_Neykova, name: 'Rumyana Neykova', role: 'Technical Director/ Software Engineering Expert', description: 'My body of work builds on the foundations of cryptocurrency theory and type systems. Furthermore, I have accumulated years of industrial experience working as a software developer in companies and corporations such as Microsoft.', linkedin: 'https://www.linkedin.com/in/rumineykova' },
+  { src: Alina_Miron, name: 'Alina Miron', role: 'AI Expert', description: 'I am an accomplished artificial intelligence researcher and developer with excellent understanding of data. This is consolidated by my PhD in Machine Learning. Furthermore, I have a strong background in computer vision, natural language processing and data science.', linkedin: 'Linkedin not available' },
+  { src: Stephen_Swift, name: 'Stephen Swift', role: 'AI Expert', description: 'My interest corresponds with intelligent data analysis, heuristic search, search-based software engineering and data clustering & database refactoring. Furthermore, I am a member of FIAR-NER, which promotes collaborations between industry and academia.', linkedin: 'https://www.linkedin.com/in/stephen-swift-5959253' },
+  { src: Isabel_Sasoon, name:'Isabel Sasoon', role: 'Data Science Expert' ,description:'My research interests are in data science, data-driven automated reasoning, and its transparency and explainability. Isabel has over 10 years of industry experience working as a data scientist in various verticals including Health, Public Sector and Telecoms. ', linkedin: 'https://www.linkedin.com/in/isabel-sassoon-phd-18437a1'},
+  { src: Derek_Groen, name: 'Derek Groen', role: 'Applied R&D Expert',description:'I am an interdisplinary researcher who focuses primarily on multiscale modelling and high-performance computing, but takes along some major challenges that surroung these topics.', linkedin: 'https://www.linkedin.com/in/derek-groen-126a9a10'},
+  { src: David_Bell, name: 'David Bell', role: 'Applied R&D Expert' ,description:'I am a multi-disciplinary researcher, who has applied novel digital service solutions in varying domains (including a range of health setting). Furthermore, I have industrial experience working for several small to large software development companies.', linkedin: 'https://www.linkedin.com/in/drdavidbell'},
+  { src: Giuseppe_Destefanis, name: 'Giuseppe Destefanis', role: 'Software Engineering Expert',description:'The focal areas of my research revolve around mining software repositories, empirical software engineering, agile methodologies, software metrics & patterns, and blockchain. Also, I have 15+ years’ experience working as a consultant and affiliate researcher.', linkedin: 'https://www.linkedin.com/in/giuseppe-destefanis-2b301813' },
+  { src: Timothy_Cribbini, name: 'Timothy Cribbini', role: 'UI Expert',description:'My expertise and interests lie in the realm of researching new methods and applications of visual text analytics in multiple diverse areas. Over the course of my career, I have also participated in several funded projects in which I have consolidated my research.', linkedin: 'https://www.linkedin.com/in/timothy-cribbin-44476b171' },
+  { src: Kate_Hone, name: 'Kate Hone', role: 'UI Expert',description:'I am a highly experienced academic leader whose research particularly focuses on the human factor implications of using speech and emotion within system design. I have incorporated this research into many projects such as the Millennium Homes project as well as many others.' , linkedin: 'https://www.linkedin.com/in/kate-hone-94616513'},
+  { src: Xiaohui_Liu, name: 'Xiaohui Liu', role: 'AI Expert',description:'Xiaohui Liu is Professor of Computing at Brunel University London where he conducts research in artificial intelligence, data science and optimization, with applications in diverse areas including biomedicine and engineering.' , linkedin: 'https://www.linkedin.com/in/xiaohui-liu-3b069624'},
+  { src: AlanSerranoRico, name: 'Alan Serrano-Rico', role: 'Managing Director/ R&D Expert',description:'My research has mainly focused on applying scientific research to real-life challenges organisations face when adopting ICT. As the founder and director of BTM, I am keen on developing better, closer relationships between industry, academia, and our talented students.', linkedin: 'https://www.linkedin.com/in/alan-serrano-6634456'},
+  {src: MahirArzoky, name: 'Mahir Arzoky', role: 'AI Expert',description:'My interest corresponds with intelligent data analysis, heuristic search, search-based software engineering and data clustering & database refactoring. Furthermore, I am a member of FIAR-NER, which promotes collaborations between industry and academia.', linkedin: 'Linkedin not available' }
 ]
 
 const imageVariants = {
@@ -112,6 +120,18 @@ export const Talent_Image: React.FC = () => {
                   {/* Back */}
                   <div className="absolute inset-0 rounded-xl bg-slate-900 text-white flex flex-col items-center justify-center px-6 text-center backface-hidden rotate-y-180">
                     <h4 className="text-xl font-semibold">{item.name}</h4>
+                    {/* LinkedIn icon */}
+                      <a
+                        href={item.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View LinkedIn profile"
+                        className="mt-2 text-sky-400 hover:text-sky-300 hover:scale-110 transition"
+                        aria-label={`${item.name} LinkedIn`}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Linkedin size={22} />
+                      </a>
                     <p className="mt-2 text-sky-400">{item.role}</p>
                     <p className="mt-2 text-white-400">{item.description}</p>
                     {/* <p className="mt-4 text-sm text-gray-300">
